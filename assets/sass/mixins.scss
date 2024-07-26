@@ -1,0 +1,15 @@
+// Defina as variáveis de largura mínima para tablet e desktop
+$tablet-min-width: 737px;
+$desktop-min-width: 981px;
+
+@mixin onTablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}

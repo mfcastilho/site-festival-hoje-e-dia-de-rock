@@ -69,3 +69,13 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/navPanel';
+
+  @import 'responsive-video';
+
+  @import './mixins';
+  @import './responsive-video';
+  
+  .video-container {
+    @include responsive-video;
+  }
+  
